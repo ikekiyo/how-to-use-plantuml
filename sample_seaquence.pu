@@ -1,5 +1,5 @@
 @startuml
-title sample
+title sample_seaquence
 hide footbox
 
 actor ユーザー as User
