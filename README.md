@@ -1,5 +1,5 @@
 # How to use the PlantUML
-## PlantUMLのインストール
+## 環境構築
 ### 前提
  - Javaがインストール済み
 
@@ -12,7 +12,7 @@ brew install graphviz
  1. 拡張機能からPlantUML を選択し、[インストール]を押す
  2. インストール完了後に[再度読み込む]を押して Visual Studio Code を再起動する
 
-### コマンド
+## 使い方
 #### プレビューの仕方
 Alt + D
 
