@@ -1,0 +1,37 @@
+@startuml
+title sample
+hide footbox
+
+actor ユーザー as User
+activate APL
+activate API
+activate DB
+User -> APL : 開始ボタン押下
+
+APL -> API : ＊＊＊API(開始)
+API -> DB : データの登録
+API <- DB :
+APL <- API :
+
+loop A < B
+  alt value < 100
+    APL -> API : sampleApiA()
+
+  else A < B
+    APL -> API : sampleApiB()
+
+  else  other
+    APL -> APL : skip
+  end
+  APL <- API
+end
+APL --> API : async＊＊＊API()
+API -> DB : データの取得
+API <- DB :
+APL <-- API :
+
+APL -> API : ＊＊＊API(中断)
+API -> DB : データの削除
+API <- DB :
+APL <- API :
+@enduml
